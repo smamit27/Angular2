@@ -1,3 +1,14 @@
 <p>
-  home works!
+  home works!{{helloInt}}
 </p>
+
+<p><input value ="{{helloInt}}"/></p>
+<h1>Check <Mode></Mode>l Value for two way binding</h1>
+<input [(ngModel)] ="details.name"/>
+<input [(ngModel)] ="details.age"/>
+
+<button (click) = "checkAlert(details)" >Check</button>
+<p>{{customer.lastname}}</p>
+<button (click) = "Call($event)">Emit</button>
+
+<ng-content></ng-content>

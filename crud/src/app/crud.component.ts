@@ -13,4 +13,11 @@ import { HomeComponent } from './home/index';
 export class CrudAppComponent {
   title = 'crud works!';
   name = 'Crud Operation Start';
+  customer = {
+    "lastname":"Sweta"
+  }
+
+  yell(e){
+    alert("Hello"+ e);
+  }
 }
